@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-06T14:15:46.207Z" agent="5.0 (X11)" etag="lEy7BAANY9l4cFg1TNSP" version="17.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-06T14:18:13.054Z" agent="5.0 (X11)" etag="SgvwhLDjnDYhPQ08w6UE" version="17.4.0" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="981" dy="608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -16,22 +16,22 @@
         <mxCell id="UNSAUiJYhtH-Udivvr5D-9" value="&lt;div&gt;&lt;span&gt;Process Model&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;Instance&lt;/span&gt;&lt;/div&gt;" style="html=1;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="360" y="150" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="UNSAUiJYhtH-Udivvr5D-10" value="Abstract Cost&lt;br&gt;Driver" style="html=1;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="UNSAUiJYhtH-Udivvr5D-10" value="Abstract Cost&lt;br&gt;Driver" style="html=1;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="630" y="330" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="UNSAUiJYhtH-Udivvr5D-11" value="Activity Profile" style="html=1;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="UNSAUiJYhtH-Udivvr5D-11" value="Activity Profile" style="html=1;fontStyle=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="359" y="330" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="UNSAUiJYhtH-Udivvr5D-12" value="&lt;span style=&quot;font-weight: normal&quot;&gt;«relator»&lt;/span&gt;&lt;span&gt;&lt;br&gt;Cost Variant&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;" style="html=1;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="UNSAUiJYhtH-Udivvr5D-12" value="&lt;span style=&quot;font-weight: normal&quot;&gt;«relator»&lt;/span&gt;&lt;span&gt;&lt;br&gt;Cost Variant&lt;/span&gt;&lt;br&gt;&lt;span&gt;&lt;/span&gt;" style="html=1;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="530" y="550" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="UNSAUiJYhtH-Udivvr5D-13" value="Concrete Cost&lt;br&gt;Driver" style="html=1;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="UNSAUiJYhtH-Udivvr5D-13" value="Concrete Cost&lt;br&gt;Driver" style="html=1;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="359" y="410" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="UNSAUiJYhtH-Udivvr5D-14" value="Simulation&lt;br&gt;Configuration" style="html=1;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="UNSAUiJYhtH-Udivvr5D-14" value="Simulation&lt;br&gt;Configuration" style="html=1;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="530" y="670" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="UNSAUiJYhtH-Udivvr5D-15" value="Trace Profile" style="html=1;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="UNSAUiJYhtH-Udivvr5D-15" value="Trace Profile" style="html=1;fontStyle=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="200" y="330" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="UNSAUiJYhtH-Udivvr5D-31" value="" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UNSAUiJYhtH-Udivvr5D-13" target="UNSAUiJYhtH-Udivvr5D-10">
