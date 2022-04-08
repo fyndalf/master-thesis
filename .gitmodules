@@ -1,0 +1,4 @@
+[submodule "document"]
+	path = document
+	url = git@github.com:fyndalf/master-thesis-document.git
+	branch = main
