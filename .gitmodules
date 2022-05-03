@@ -2,3 +2,7 @@
 	path = document
 	url = git@github.com:fyndalf/master-thesis-document.git
 	branch = main
+[submodule "implementation"]
+	path = implementation
+	url = git@github.com:fyndalf/scylla.git
+	branch = thesis-implementation
