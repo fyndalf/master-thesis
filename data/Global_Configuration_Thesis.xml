@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bsim:globalConfiguration xmlns:bsim="http://bsim.hpi.uni-potsdam.de/scylla/simModel" targetNamespace="http://www.hpi.de" id="Global_Configuration_Thesis">
+  <bsim:zoneOffset>+01:00</bsim:zoneOffset>
+  <bsim:resourceData>
+    <bsim:dynamicResource id="Resource 1" defaultQuantity="50" defaultCost="0.0" defaultTimeUnit="SECONDS" />
+  </bsim:resourceData>
+  <bsim:timetables>
+    <bsim:timetable id="A">
+      <bsim:timetableItem from="MONDAY" to="MONDAY" beginTime="08:00" endTime="19:00" />
+      <bsim:timetableItem from="TUESDAY" to="TUESDAY" beginTime="08:00" endTime="19:00" />
+      <bsim:timetableItem from="WEDNESDAY" to="WEDNESDAY" beginTime="08:00" endTime="19:00" />
+      <bsim:timetableItem from="THURSDAY" to="THURSDAY" beginTime="08:00" endTime="19:00" />
+      <bsim:timetableItem from="FRIDAY" to="FRIDAY" beginTime="08:00" endTime="19:00" />
+      <bsim:timetableItem from="SATURDAY" to="SATURDAY" beginTime="08:00" endTime="13:00" />
+    </bsim:timetable>
+  </bsim:timetables>
+</bsim:globalConfiguration>
