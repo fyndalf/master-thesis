@@ -1,0 +1,11 @@
+##### Process Cost #####
+
+Average Trace Cost: -1.612553599999998E-4
+Activity Costs:
+    Produce Intermediate - 4.749999999999989E-5
+    Product delivered - 0.0
+    Calculate Demand - 0.0
+    Order received - 0.0
+    Produce - -1.2799999999999975E-4
+    Transport Intermediate - 8.199999999999998E-10
+    Deliver Product - -1.2850000000000015E-7

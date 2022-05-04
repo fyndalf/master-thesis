@@ -9,8 +9,9 @@ Activity Costs:
     Produce - 1.1000000000000013E-5
     Transport Intermediate - 6.350000000000009E-8
     Deliver Product - 1.0850000000000014E-7
-    
-    
+
+
+
 ##### Process Cost #####
 
 Average Trace Cost: -1.612553599999998E-4
@@ -22,19 +23,20 @@ Activity Costs:
     Produce - -1.2799999999999975E-4
     Transport Intermediate - 8.199999999999998E-10
     Deliver Product - -1.2850000000000015E-7
-    
-    
-##### Relative Process Cost Difference #####
 
-Trace Cost Difference: -114.62840637768241
+
+
+##### Absolute Process Cost Difference #####
+
+Trace Cost Difference: -0.0012635993600000016
 Activity Cost Differences:
-    Produce Intermediate - -91.20370370370371
+    Produce Intermediate - -4.924999999999993E-4
     Product delivered - 0.0
     Calculate Demand - 0.0
     Order received - 0.0
-    Produce - -1263.63636363636
-    Transport Intermediate - -98.70866141732283
-    Deliver Product - -218.43317972350226
+    Produce - -1.3899999999999977E-4
+    Transport Intermediate - -6.268000000000008E-8
+    Deliver Product - -2.3700000000000028E-7
 
 
 
