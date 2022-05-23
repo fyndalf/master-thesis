@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1xj4wit" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="9.0.3">
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1xj4wit" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="9.1.0">
   <bpmn:process id="Process_0vv8a1n" isExecutable="false">
     <bpmn:startEvent id="StartEvent_0gkkt3f" name="Product received">
       <bpmn:outgoing>Flow_06fvazw</bpmn:outgoing>
@@ -37,11 +37,21 @@
     <bpmn:task id="Activity_0zhmejb" name="Deliver to Door">
       <bpmn:incoming>Flow_0fyac79</bpmn:incoming>
       <bpmn:outgoing>Flow_0xtz5ns</bpmn:outgoing>
+      <bpmn:property id="Property_0nuf1rf" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_052sbch">
+        <bpmn:sourceRef>DataObjectReference_0xerjsr</bpmn:sourceRef>
+        <bpmn:targetRef>Property_0nuf1rf</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
     </bpmn:task>
     <bpmn:sequenceFlow id="Flow_0fyac79" sourceRef="Gateway_0uo58jk" targetRef="Activity_0zhmejb" />
     <bpmn:task id="Activity_192mexg" name="Deliver to Packstation">
       <bpmn:incoming>Flow_01tzu06</bpmn:incoming>
       <bpmn:outgoing>Flow_02uc4va</bpmn:outgoing>
+      <bpmn:property id="Property_14u8uue" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_062iuix">
+        <bpmn:sourceRef>DataObjectReference_0xerjsr</bpmn:sourceRef>
+        <bpmn:targetRef>Property_14u8uue</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
     </bpmn:task>
     <bpmn:sequenceFlow id="Flow_01tzu06" sourceRef="Gateway_0uo58jk" targetRef="Activity_192mexg" />
     <bpmn:exclusiveGateway id="Gateway_1bzfr5k" name="recipient present?">
@@ -115,6 +125,8 @@
     <bpmn:dataObject id="DataObject_0zivaxn" />
     <bpmn:dataObjectReference id="DataObjectReference_1p8jcck" name="Cost Driver: Re-routing" dataObjectRef="DataObject_0i4gqjn" />
     <bpmn:dataObject id="DataObject_0i4gqjn" />
+    <bpmn:dataObjectReference id="DataObjectReference_0xerjsr" name="Cost Driver: Delivery" dataObjectRef="DataObject_1xnjbgm" />
+    <bpmn:dataObject id="DataObject_1xnjbgm" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_0vv8a1n">
@@ -288,6 +300,12 @@
           <dc:Bounds x="870" y="123" width="79" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataObjectReference_0xerjsr_di" bpmnElement="DataObjectReference_0xerjsr">
+        <dc:Bounds x="502" y="145" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="470" y="208" width="59" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="DataInputAssociation_0g2a8e2_di" bpmnElement="DataInputAssociation_0g2a8e2">
         <di:waypoint x="192" y="188" />
         <di:waypoint x="261" y="259" />
@@ -311,6 +329,14 @@
       <bpmndi:BPMNEdge id="DataInputAssociation_0iqwpjo_di" bpmnElement="DataInputAssociation_0iqwpjo">
         <di:waypoint x="856" y="135" />
         <di:waypoint x="878" y="170" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataInputAssociation_052sbch_di" bpmnElement="DataInputAssociation_052sbch">
+        <di:waypoint x="538" y="192" />
+        <di:waypoint x="593" y="259" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataInputAssociation_062iuix_di" bpmnElement="DataInputAssociation_062iuix">
+        <di:waypoint x="527" y="195" />
+        <di:waypoint x="569" y="350" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
