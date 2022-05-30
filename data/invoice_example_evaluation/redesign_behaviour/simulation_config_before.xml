@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bsim:definitions xmlns:bsim="http://bsim.hpi.uni-potsdam.de/scylla/simModel" targetNamespace="http://www.hpi.de">
+  <bsim:simulationConfiguration startDateTime="2022-05-30T18:09:24.070425+02:00[Europe/Berlin]" endDateTime="2022-05-30T18:09:24+02:00[Europe/Berlin]" id="NewSimulationConfiguration" processRef="Process_1o9juf8" processInstances="100">
+    <bsim:Task id="Activity_03cead2" name="Attach invoice entry form">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>10.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources>
+        <bsim:resource id="Resource 1" amount="1" />
+      </bsim:resources>
+    </bsim:Task>
+    <bsim:startEvent id="StartEvent_1yk62zl">
+      <bsim:arrivalRate timeUnit="HOURS">
+        <bsim:normalDistribution>
+          <bsim:mean>6.0</bsim:mean>
+          <bsim:standardDeviation>1.0</bsim:standardDeviation>
+        </bsim:normalDistribution>
+      </bsim:arrivalRate>
+    </bsim:startEvent>
+    <bsim:Task id="Activity_0z6ihkw" name="Check completeness">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>30.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:exclusiveGateway id="Gateway_0j9jcw4">
+      <bsim:outgoingSequenceFlow id="Flow_1qx6dpx">
+        <bsim:branchingProbability>0.8</bsim:branchingProbability>
+      </bsim:outgoingSequenceFlow>
+      <bsim:outgoingSequenceFlow id="Flow_15qr5ro">
+        <bsim:branchingProbability>0.2</bsim:branchingProbability>
+      </bsim:outgoingSequenceFlow>
+    </bsim:exclusiveGateway>
+    <bsim:Task id="Activity_05gf404" name="Check compliance">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>10.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_1036fq3" name="Return invoice to client">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>20.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:exclusiveGateway id="Gateway_0vpl9u2">
+      <bsim:outgoingSequenceFlow id="Flow_0qo04ss">
+        <bsim:branchingProbability>0.1</bsim:branchingProbability>
+      </bsim:outgoingSequenceFlow>
+      <bsim:outgoingSequenceFlow id="Flow_0cy0qva">
+        <bsim:branchingProbability>0.7</bsim:branchingProbability>
+      </bsim:outgoingSequenceFlow>
+      <bsim:outgoingSequenceFlow id="Flow_19z2xwx">
+        <bsim:branchingProbability>0.2</bsim:branchingProbability>
+      </bsim:outgoingSequenceFlow>
+    </bsim:exclusiveGateway>
+    <bsim:Task id="Activity_1s6vl6q" name="Request information via phone">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>30.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_0um45rd" name="Return invoice via mail for completion">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>2.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_0g9vttt" name="Batch and send">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>15.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_0pkb9ul" name="Check vendor SAP number">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>2.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:exclusiveGateway id="Gateway_1h8isxm">
+      <bsim:outgoingSequenceFlow id="Flow_1y4jgpy">
+        <bsim:branchingProbability>0.1</bsim:branchingProbability>
+      </bsim:outgoingSequenceFlow>
+      <bsim:outgoingSequenceFlow id="Flow_0dxlzlh">
+        <bsim:branchingProbability>0.9</bsim:branchingProbability>
+      </bsim:outgoingSequenceFlow>
+    </bsim:exclusiveGateway>
+    <bsim:Task id="Activity_0fl32ct" name="Complete vendor master record request form">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>10.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_0zg8u2p" name="Collect and deliver to Master Data Entry Unit">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>15.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_1vngjdl" name="Note SAP number on invoice">
+      <bsim:duration timeUnit="SECONDS">
+        <bsim:constantDistribution>
+          <bsim:constantValue>10.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_1lwxqgr" name="Send to validation officer">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>40.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_04kv275" name="Print Report">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>10.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_1x78c0t" name="Change status of invoice">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>20.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_1aye230" name="Send to Registry">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>10.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_0dwbxi0" name="Run payment process">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>10.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_1xavr1p" name="Generate Payment Report">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>30.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_16bzjlj" name="Send Payment Report to registry">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>20.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_0pritbf" name="Send Payment Report to Account Receivable">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>10.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_1jgmiez" name="Send Payment Report to Client">
+      <bsim:duration timeUnit="MINUTES">
+        <bsim:constantDistribution>
+          <bsim:constantValue>10.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_06xnf94" name="Archive">
+      <bsim:duration timeUnit="HOURS">
+        <bsim:constantDistribution>
+          <bsim:constantValue>10.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+    <bsim:Task id="Activity_0q0tabr" name="Generate monthly invoice">
+      <bsim:duration timeUnit="SECONDS">
+        <bsim:constantDistribution>
+          <bsim:constantValue>10.0</bsim:constantValue>
+        </bsim:constantDistribution>
+      </bsim:duration>
+      <bsim:resources />
+    </bsim:Task>
+  </bsim:simulationConfiguration>
+</bsim:definitions>

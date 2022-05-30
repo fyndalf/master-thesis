@@ -2,7 +2,10 @@
 <bsim:globalConfiguration xmlns:bsim="http://bsim.hpi.uni-potsdam.de/scylla/simModel" targetNamespace="http://www.hpi.de" id="Global_Configuration_Thesis">
   <bsim:zoneOffset>+01:00</bsim:zoneOffset>
   <bsim:resourceData>
-    <bsim:dynamicResource id="Resource 1" defaultQuantity="50" defaultCost="0.0" defaultTimeUnit="SECONDS" />
+    <bsim:dynamicResource id="Resource 1" defaultQuantity="50" defaultCost="0.0" defaultTimeUnit="SECONDS" defaultTimetableId="A">
+      <bsim:instance name="One Instance" timetableId="A" />
+      <bsim:instance name="Other Instance" timetableId="A" />
+    </bsim:dynamicResource>
   </bsim:resourceData>
   <bsim:timetables>
     <bsim:timetable id="A">

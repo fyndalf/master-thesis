@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<costVariantConfig count="100">
+    <variant id="standard procedure" frequency="0">
+        <driver id="Invoice Entry Form" cost="0.00001218"/>
+        <driver id="Return Shipment" cost="0.0000933"/>
+        <driver id="Mail to Data Entry Staff" cost="0.00002"/>
+        <driver id="Master Request Form" cost="0.0000122"/>
+        <driver id="Mail to Master Data Entry Unit" cost="0.0000533"/>
+        <driver id="Mail to Validation Office" cost="0.0000533"/>
+        <driver id="Report" cost="0.0000122"/>
+        <driver id="Mail to Registry" cost="0.0000533"/>
+        <driver id="Payment Report" cost="0.0000122"/>
+        <driver id="Mail to Account Receivable" cost="0.0000533"/>
+        <driver id="Posting Payment Report to Client" cost="0.0000533"/>
+        <driver id="Monthly Invoice" cost="0.0000122"/>
+        <driver id="Mail Payment Report to Registry" cost="0.0.0000533"/>
+        <driver id="Archival" cost="0.0000533"/>
+    </variant>
+    <variant id="better printing and mailing" frequency="1">
+        <driver id="Invoice Entry Form" cost="0.0000093"/>
+        <driver id="Return Shipment" cost="0.0000533"/>
+        <driver id="Mail to Data Entry Staff" cost="0.00001"/>
+        <driver id="Master Request Form" cost="0.0000093"/>
+        <driver id="Mail to Master Data Entry Unit" cost="0.00001"/>
+        <driver id="Mail to Validation Office" cost="0.00001"/>
+        <driver id="Report" cost="0.00000933"/>
+        <driver id="Mail to Registry" cost="0.00001"/>
+        <driver id="Payment Report" cost="0.0000093"/>
+        <driver id="Mail to Account Receivable" cost="0.00001"/>
+        <driver id="Posting Payment Report to Client" cost="0.00001"/>
+        <driver id="Monthly Invoice" cost="0.0000093"/>
+        <driver id="Mail Payment Report to Registry" cost="0.0.00001"/>
+        <driver id="Archival" cost="0.00001"/>
+    </variant>
+</costVariantConfig>
+

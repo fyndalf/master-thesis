@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<costVariantConfig count="100">
+    <variant id="lorry delivery and routing" frequency="0">
+        <driver id="Packaging Material" cost="0.000000779"/>
+        <driver id="Filling Material" cost="0.00000228"/>
+        <driver id="Rerouting" cost="0.0000139"/>
+        <driver id="Delivery" cost="0.0000278"/>
+    </variant>
+    <variant id="bike delivery and routing" frequency="1">
+        <driver id="Packaging Material" cost="0.000000779"/>
+        <driver id="Filling Material" cost="0.00000228"/>
+        <driver id="Rerouting" cost="0.000007494"/>
+        <driver id="Delivery" cost="0.000014988"/>
+    </variant>
+    <fixed_cost id="Shipment" cost="0.0000533" />
+    <fixed_cost id="Receipt" cost="0.00000609" />
+    <fixed_cost id="Return Shipment" cost="0.0000533" />
+</costVariantConfig>

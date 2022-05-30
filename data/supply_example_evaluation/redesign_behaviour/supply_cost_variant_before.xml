@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<costVariantConfig count="100">
+    <variant id="harmful variant" frequency="0.7">
+        <driver id="Intermediate Production" cost="0.00108"/>
+        <driver id="Intermediate Transportation" cost="0.000000127"/>
+        <driver id="Production" cost="0.000022"/>
+        <driver id="Transportation" cost="0.000000217"/>
+        <driver id="Demand Calculation" cost="0" />
+    </variant>
+    <variant id="improved variant" frequency="0.3">
+        <driver id="Intermediate Production" cost="0.000095"/>
+        <driver id="Intermediate Transportation" cost="0.00000000164"/>
+        <driver id="Production" cost="-0.000256"/>
+        <driver id="Transportation" cost="-0.000000257" />
+        <driver id="Demand Calculation" cost="0" />
+    </variant>
+    <fixed_cost id="Calculate Demand" cost ="0" />
+</costVariantConfig>
+
