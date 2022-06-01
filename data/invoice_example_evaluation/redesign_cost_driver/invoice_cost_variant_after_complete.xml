@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <costVariantConfig count="100">
-    <variant id="standard procedure" frequency="0.2">
+    <variant id="standard procedure" frequency="0">
         <driver id="Invoice Entry Form" cost="0.00001218"/>
         <driver id="Return Shipment" cost="0.000933"/>
         <driver id="Mail to Data Entry Staff" cost="0.00002"/>
@@ -16,7 +16,7 @@
         <driver id="Mail Payment Report to Registry" cost="0.0000533"/>
         <driver id="Archival" cost="0.0000533"/>
     </variant>
-    <variant id="better printing and mailing" frequency="0.8">
+    <variant id="better printing and mailing" frequency="1">
         <driver id="Invoice Entry Form" cost="0.0000093"/>
         <driver id="Return Shipment" cost="0.0000533"/>
         <driver id="Mail to Data Entry Staff" cost="0.00001"/>
