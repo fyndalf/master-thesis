@@ -6,3 +6,7 @@
 	path = implementation
 	url = git@github.com:fyndalf/scylla.git
 	branch = thesis-implementation
+[submodule "analysis-tool"]
+	path = analysis_tool
+	url = git@github.com:fyndalf/sustainability-analysis-tool.git
+	branch = main
